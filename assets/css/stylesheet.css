@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "NexaBold";
+    src: url("../fonts/nexabold.otf");
+}
+body {
+    background-color: dimgray;
+    font-family: "NexaBold";
+}
+
+
+/* inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan */
