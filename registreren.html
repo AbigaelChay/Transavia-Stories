@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registreren</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+
+<body>
+    <main>
+        <form action="index.html">
+            <fieldset>
+                <legend>Persoonsgegevens</legend>
+                <label for="name">voor en/of achternaam</label>
+                <input id="name" type="text">
+                <label for="dateofbirth">geboortedatum</label>
+                <input id="dateofbirth" type="number" placeholder="dd-mm-jjjj">
+            </fieldset>
+
+            <fieldset>
+                <legend>Gewenste inloggegevens</legend>
+                <label for="email">mail</label><input id="email" type="email" required>
+                <label for="password">wachtwoord</label> <input id="password" type="password" required>
+                <label for="repeatpassword">bevestig wachtwoord</label> <input id="repeatpassword" type="password" required>
+            </fieldset>
+            <input type="submit" value="account aanmaken">
+        </form>
+    </main>
+</body>
+
+</html>

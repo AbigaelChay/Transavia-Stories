@@ -11,50 +11,73 @@
 <body>
 
     <header>
-        <img src="assets/images/logo.png" alt="logo" />
+        <img src="assets/images/logo1.png" alt="logo" />
         <h1> 99STORIES </h1>
-        <nav>
-            <ul>
-                <li> ACCOUNT </li>
-            </ul>
-        </nav>
+        
     </header>
 
     <main>
         <section>
-
-            <h2>log in voor offline toegang tot je favoriete verhalen</h2>
-            <form>
+    
+        <h2>verhaal op maat?</h2>
+        <form action="#">
+          <fieldset>
+           <!-- fieldset is een groepje bij elkaar horende dingen, je ziet 'm als een bordertje eromheen staan. dus als je 'm lelijk vind doe je border: none -->
+            <legend>Leesduur</legend>
+            <!-- legend is de titel van de fieldset, deze zie je ook daadwerkelijk op de site, de namen van labels zie je ook, dus geef 1 van de 2 dezelfde kleur als je achtergrond -->
+             <label for="range">leesduur</label>
+            <input id="range" type="range" min="1" max="20" step="1">
+            <button>bekijk resultaten</button>
               
-               <!-- labels zijn de naam die bij input types komen te staan, input types zijn velden waarin je typt. Heb je er meer dan moeten ze een ID hebben voor beperkten -->
-               
-                <label for="email">email</label> <input id="email" type="email">
-                <label for="password">password</label><input id="password" type="password">
-                <input type="submit" value="inloggen">
-                <p>of login met</p> <button>Facebook</button> <button>Transavia</button>
-            </form>
-
+          </fieldset>
+           
+        </form>
+        <form action="#">
+           <fieldset>
+           <legend>zoeken</legend>
+           <label for="zoeken">zoeken</label>
+            <input type="text" id="zoeken" placeholder="zoeken">
+            
+            </fieldset>
+        </form>
         </section>
-
         <section>
-
-            <h2>populair vandaag</h2>
+        <h2>populair vandaag</h2>
             
         </section>
+        
 
+        
+
+
+        
+      
         <section>
-            <h2>verhaal op maat?</h2>
-            <input type="range">
-            <button>bekijk resultaten</button>
-            <input type="text">
-        </section>
+            <h2>log in voor offline toegang tot je favoriete verhalen</h2>
+                <form>
+
+                    <!-- labels zijn de naam die bij input types komen te staan, input types zijn velden waarin je typt. Heb je er meer dan moeten ze een ID hebben voor beperkten -->
+                    <fieldset>
+                        <legend>inloggegevens</legend>
+                    <label for="email">email</label> 
+                    <input id="email" type="email">
+                    <label for="password">password</label>
+                    <input id="password" type="password">
+                            </fieldset>
+                    <input type="submit" value="inloggen">
+                </form>
+                
+                <p>of login met</p> <button>Facebook</button> <button>Transavia</button>
+                <p>nog geen account? <a href="registreren.html">registreren</a> </p>
+                
+            </section>
+
 
     </main>
-    
     <footer>
-    <p>© Abigael Straver 2017 | 99STORIES is onderdeel van Transavia </p>
+        © Abigael Straver 2017 | 99STORIES is onderdeel van Transavia
     </footer>
-    
+
 </body>
 
 </html>

@@ -2,10 +2,59 @@
     font-family: "NexaBold";
     src: url("../fonts/nexabold.otf");
 }
+
 body {
-    background-color: dimgray;
+    background-image: url(/site/Transavia-Stories/assets/nikos-zacharoulis-276714.jpg);
     font-family: "NexaBold";
 }
 
 
-/* inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan */
+/* note to self: 
+1. inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan; 
+2. 1em is gelijk aan 16px (vaak) gebruik rem, em of % en GEEN PIXELS;
+ */
+fieldset {
+border: transparent;
+}
+
+legend {
+color: transparent;}
+
+section {
+
+    text-align: center;
+    border-color: white;
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    padding: 2em;
+    margin: 2em;
+}
+
+h2 {
+font-size: 1.2em;}
+
+footer {
+font-size: 0.6em;}
+
+header {
+max-height: 5rem;
+color: green;
+background-color: white;
+
+}
+header ul {
+display: inline-block;
+float: right;
+margin: 1rem;
+margin-right: 2rem;}
+
+
+header img {
+width: 10rem;
+    height: auto;
+    margin: 1em;
+}
+
+header h1 {
+display: none;}
