@@ -13,65 +13,46 @@
     <header>
         <img src="assets/images/logo1.png" alt="logo" />
         <h1> 99STORIES </h1>
-        
+
     </header>
 
     <main>
-        <section>
-    
-        <h2>verhaal op maat?</h2>
+
+        <!-- fieldset is een groepje bij elkaar horende dingen, je ziet 'm als een bordertje eromheen staan. dus als je 'm lelijk vind doe je border: none -->
+
+        <!-- legend is de titel van de fieldset, deze zie je ook daadwerkelijk op de site, de namen van labels zie je ook, dus geef 1 van de 2 dezelfde kleur als je achtergrond -->
+
         <form action="#">
-          <fieldset>
-           <!-- fieldset is een groepje bij elkaar horende dingen, je ziet 'm als een bordertje eromheen staan. dus als je 'm lelijk vind doe je border: none -->
-            <legend>Leesduur</legend>
-            <!-- legend is de titel van de fieldset, deze zie je ook daadwerkelijk op de site, de namen van labels zie je ook, dus geef 1 van de 2 dezelfde kleur als je achtergrond -->
-             <label for="range">leesduur</label>
-            <input id="range" type="range" min="1" max="20" step="1">
-            <button>bekijk resultaten</button>
-              
-          </fieldset>
-           
-        </form>
-        <form action="#">
-           <fieldset>
-           <legend>zoeken</legend>
-           <label for="zoeken">zoeken</label>
-            <input type="text" id="zoeken" placeholder="zoeken">
-            
+            <fieldset>
+                <legend>zoeken</legend>
+
+                <label for="zoeken">zoeken</label>
+                <input type="text" id="zoeken" placeholder="zoeken">
             </fieldset>
+
+            <fieldset>
+                <legend>sorteren en filteren</legend>
+                <select name="sorteren op" id="sort">
+               <option value="sorteren op"> Sorteren op </option>
+               <option value="1-99"> 1 - 99 </option>
+               <option value="99-1"> 99- 1 </option>
+               <option value="A-Z"> A - Z </option>
+               <option value="Z-A"> Z - A </option>
+               <option value="Populair"> Populair </option>
+               <option value="Meest geliked"> Meest geliked</option>
+           </select>
+
+                <select name="Filteren op leesduur" id="filter">
+                   <option value="leesduur">Filteren op leesduur</option>
+                    <option value="1-2 minuten">1-2 minuten</option>
+                    <option value="3-5 minuten">3-5 minuten</option>
+                    <option value="6-8 minuten">6-8 minuten</option>
+                    <option value="9-12 minuten">9-12 minuten</option>
+                    <option value="13-15 minuten">13-15 minuten</option>
+                </select>
+            </fieldset>
+<input type="submit" value="Naar resultaten">
         </form>
-        </section>
-        <section>
-        <h2>populair vandaag</h2>
-            
-        </section>
-        
-
-        
-
-
-        
-      
-        <section>
-            <h2>log in voor offline toegang tot je favoriete verhalen</h2>
-                <form>
-
-                    <!-- labels zijn de naam die bij input types komen te staan, input types zijn velden waarin je typt. Heb je er meer dan moeten ze een ID hebben voor beperkten -->
-                    <fieldset>
-                        <legend>inloggegevens</legend>
-                    <label for="email">email</label> 
-                    <input id="email" type="email">
-                    <label for="password">password</label>
-                    <input id="password" type="password">
-                            </fieldset>
-                    <input type="submit" value="inloggen">
-                </form>
-                
-                <p>of login met</p> <button>Facebook</button> <button>Transavia</button>
-                <p>nog geen account? <a href="registreren.html">registreren</a> </p>
-                
-            </section>
-
 
     </main>
     <footer>
