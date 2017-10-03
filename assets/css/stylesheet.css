@@ -13,26 +13,20 @@ body {
 1. inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan; 
 2. 1em is gelijk aan 16px (vaak) gebruik rem, em of % en GEEN PIXELS;
  */
+
 fieldset {
 border: transparent;
 }
 
-legend {
-color: transparent;}
+/* Hieronder = Registreren ding en zoek + result in menu */
 
-section {
-
-    text-align: center;
-    border-color: white;
-    background-color: white;
-    color: black;
-    border-radius: 1em;
-    padding: 2em;
-    margin: 2em;
+form input, form label {
+    display: block;
 }
 
-h2 {
-font-size: 1.2em;}
+/* Tot hier */
+
+
 
 footer {
 font-size: 0.6em;}
@@ -43,11 +37,10 @@ color: green;
 background-color: white;
 
 }
-header ul {
-display: inline-block;
-float: right;
-margin: 1rem;
-margin-right: 2rem;}
+main {
+    padding-top: 6rem;
+}
+
 
 
 header img {
@@ -57,4 +50,81 @@ width: 10rem;
 }
 
 header h1 {
-display: none;}
+display: none;
+}
+
+
+header form label {
+    /* https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border:0;
+}
+header form {
+    padding-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    
+} 
+header form input, header form label {
+    display: inline-block;
+}
+/* Alles buiten het mooie brede menu balkje moet hier, en alles wat erin staat als ie al mooi groot is moet hieronder achter @media */
+
+@media screen and (min-width: 29rem){
+    header form {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    header form fieldset {
+        margin: 0;
+        padding: 0;
+    }
+    header form fieldset legend {
+        max-height: 0;
+        color: transparent;
+    }
+    header form fieldset input:first-of-type {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    header form input:last-of-type {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    header form input, header form label, header form select {
+    -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 3rem;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 0px;
+    }
+}
+
+main img {
+max-width: 100%;
+    height: auto;
+    
+}
+
+.artikelenhomepage {
+
+max-width: 10em;
+
+}
+
