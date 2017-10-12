@@ -4,15 +4,92 @@
 }
 
 body {
-    background-image: url(/site/Transavia-Stories/assets/nikos-zacharoulis-276714.jpg);
+    background-image: url(/site/Transavia-Stories/assets/images/nikos.jpg);
     font-family: "NexaBold";
 }
 
+main img {
+max-width: 100%;
+    height: auto;
+    
+}
+
+.artikelenhomepage {
+
+max-width: 10em;
+
+}
+
+input[type="submit"] { 
+    background-color: #ff306e;
+} 
+
+
+main section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+}
+
+main section h2 {
+width: 100%;}
 
 /* note to self: 
 1. inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan; 
 2. 1em is gelijk aan 16px (vaak) gebruik rem, em of % en GEEN PIXELS;
  */
+h2 {
+margin-left: 1em;
+    margin-top: 1em;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+header form label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border:0;
+}
+header form fieldset {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    padding-top: 2.05rem;
+    
+}
+header form fieldset legend {
+    max-height: 0;
+    color: transparent;
+}
+article:first-of-type
+{ display: block;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    max-width: 25em;
+}
+
+article
+{ display: block;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    max-width: 15em;
+    max-height: 15em;
+}
 
 fieldset {
 border: transparent;
@@ -29,7 +106,9 @@ form input, form label {
 
 
 footer {
-font-size: 0.6em;}
+font-size: 0.6em;
+ }
+
 
 header {
 max-height: 5rem;
@@ -50,11 +129,15 @@ width: 10rem;
 }
 
 header h1 {
-display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border:0;
 }
 
 
-header form label {
+main form label {
     /* https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
     position: absolute;
     overflow: hidden;
@@ -62,7 +145,8 @@ header form label {
     height: 1px; width: 1px;
     margin: -1px; padding: 0; border:0;
 }
-header form {
+main form {
+    
     padding-top: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -72,13 +156,13 @@ header form {
     align-items: center;
     
 } 
-header form input, header form label {
+main form input, main form label {
     display: inline-block;
 }
 /* Alles buiten het mooie brede menu balkje moet hier, en alles wat erin staat als ie al mooi groot is moet hieronder achter @media */
 
-@media screen and (min-width: 29rem){
-    header form {
+@media screen and (min-width: 20rem){
+    main form {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -87,22 +171,22 @@ header form input, header form label {
         justify-content: center;
     }
     
-    header form fieldset {
+    main form fieldset {
         margin: 0;
         padding: 0;
     }
-    header form fieldset legend {
+    main form fieldset legend {
         max-height: 0;
         color: transparent;
     }
-    header form fieldset input:first-of-type {
+    main form fieldset select:first-of-type {
         border-radius: 0.5rem 0 0 0.5rem;
     }
-    header form input:last-of-type {
+    main form input:last-of-type {
         border-radius: 0 0.5rem 0.5rem 0;
     }
 
-    header form input, header form label, header form select {
+    main form input, main form label, main form select {
     -webkit-appearance: none;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -116,15 +200,9 @@ header form input, header form label {
     }
 }
 
-main img {
-max-width: 100%;
-    height: auto;
-    
-}
-
-.artikelenhomepage {
-
-max-width: 10em;
-
-}
-
+header img:nth-of-type(2) {
+width: 2em;
+height: 2em;
+-ms-flex-item-align: center;
+align-self: center;
+margin-top: 1.2em }
