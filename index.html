@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <script src="java.js"></script>
 
     <header>
         <img src="assets/images/logo1.png" alt="logo" />
@@ -16,19 +17,20 @@
         <img src="../Transavia-Stories/assets/images/searchicon.png" alt="zoekicoon">
         <form action="zoeken">
             <fieldset>
-               <legend>zoeken</legend>
+                <legend>zoeken</legend>
                 <label for="zoeken">zoeken</label>
                 <input type="text" id="zoeken" placeholder="zoeken">
-                
             </fieldset>
         </form>
-  <img src="../Transavia-Stories/assets/images/accounticon.png" alt="account">
+        <a href="../Transavia-Stories/account.html">
+            <img src="../Transavia-Stories/assets/images/accounticon.png" alt="account">
+        </a>
     </header>
 
     <main>
-       <h4>Welkom op 99stories, dé website vol leesplezier voor echte literatuurliefhebbers op reis!</h4>
-       
-        <form action="#">
+        <h4>Welkom op 99stories, dé website vol leesplezier voor echte literatuurliefhebbers op reis!</h4>
+
+        <form id="form-zoeken" action="#">
             <fieldset>
                 <legend>Filter en Sorteer</legend>
                 <select name="sorteren op" id="sort">
@@ -40,14 +42,13 @@
                <option value="1-99"> 1-99 </option>
                <option value="A-Z"> A-Z</option>
            </select><!--
-
-                --><select name="Filteren op leesduur" id="filter">
-                   <option value="leesduur">Filteren op leesduur</option>
-                    <option value="1-2 minuten">1-2 minuten</option>
-                    <option value="3-5 minuten">3-5 minuten</option>
-                    <option value="6-8 minuten">6-8 minuten</option>
-                    <option value="9-12 minuten">9-12 minuten</option>
-                    <option value="13-15 minuten">13-15 minuten</option>
+               
+                --><select name="Filteren op" id="filter">
+                   <option value="filter">Filteren op</option>
+                    <option value="Leesduur">Leesduur</option>
+                    <option value="Kleur">Kleur</option>
+                    <option value="Sfeerwoord">Sfeerwoord</option>
+                    
                 </select>
             </fieldset>
             <input type="submit" value="Naar resultaten">
@@ -59,9 +60,11 @@
         <section>
             <h2>Populair vandaag</h2>
             <article>
+
                 <h3>Charlie Sheen (27) </h3>
-                <p>Amsterdam door de ogen van een hyped-up, narcistische kwal onder de invloed van cocaine. Deze naar eigen zeggen 'heroische verschijning' heeft niets dan eigendunk en een <i>taste for tigerblood.</i> </p>
-                <a href="sheen.html">Lees verder</a>
+                <p>Amsterdam door de ogen van een hyped-up, narcistische kwal onder de invloed van cocaine. Deze naar eigen zeggen 'heroische verschijning' heeft niets dan eigendunk en een <i>taste for tigerblood.</i>
+                    <img src="../Transavia-Stories/assets/images/sheensquare.jpg" alt="CharlieSheenArtwork"></p>
+
             </article>
 
             <article>
