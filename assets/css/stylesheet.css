@@ -13,6 +13,9 @@ main img {
     height: auto;
     float: right;
 }
+main > img {
+    float: none;
+}
 
 #form-zoeken input[type="submit"] {
     background-color: #ff306e;
@@ -182,6 +185,9 @@ header h1 {
     #form-zoeken fieldset legend {
         max-height: 0;
         color: transparent;
+        background: none;
+        padding: 0;
+        margin: 0;
     }
     #form-zoeken fieldset select:first-of-type {
         border-radius: 0.5rem 0 0 0.5rem;
@@ -226,18 +232,18 @@ header img:first-of-type {
     margin-right: auto;
 }
 
-header img:nth-of-type(2) {
+header img:last-child {
     width: 1.5em;
     height: 1.5em;
     margin-top: 1.7em;
-    margin-left: 0; 
+    margin-left: 0;
 }
 
-header img:last-of-type {
-    width: 1.5em;
+header img:nth-child(3) {
+width: 1.5em;
     height: 1.5em;
     margin-top: 1.7em;
-    margin-right: 2em; 
+    margin-left: 0;
 }
 
 header form input[type="text"] {
