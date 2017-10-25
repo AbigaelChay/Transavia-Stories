@@ -1,3 +1,5 @@
+// Dit heb ik samen met Folkert gemaakt //
+
 var counter = 0;
 function rotate(afbeelding) {
     "use strict";

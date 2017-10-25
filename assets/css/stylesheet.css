@@ -6,6 +6,7 @@
 body {
     background-image: url(/site/Transavia-Stories/assets/images/nikos.jpg);
     font-family: "NexaBold";
+    margin: 0;
 }
 
 main img {
@@ -224,26 +225,27 @@ main form legend {
     
 }
 
-header img:first-of-type {
+header a:first-of-type img {
     width: 6.4em;
     height: 1.8em;
     margin-top: 1.5em;
     margin-left: 0.5em;
-    margin-right: auto;
+    
+}
+header > img:first-of-type {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 1.7em;
+    margin-left: 0;
+    margin-left: auto;
 }
 
 header img:last-child {
     width: 1.5em;
     height: 1.5em;
     margin-top: 1.7em;
-    margin-left: 0;
-}
-
-header img:nth-child(3) {
-width: 1.5em;
-    height: 1.5em;
-    margin-top: 1.7em;
-    margin-left: 0;
+    margin-left: -5em;
+    padding-left: 1em;
 }
 
 header form input[type="text"] {
@@ -251,11 +253,18 @@ header form input[type="text"] {
     align-self: center;
     margin-top: 1.8rem;
     width: 5.2rem;
-    margin-right: 1.5rem;
+    margin-right: 5rem;
 }
 
-main h4 {
+main p:first-child {
     text-align: center;
     color: white;
     margin-top: 2rem;
 }
+
+main section {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-line-pack: center;
+align-content: center;}

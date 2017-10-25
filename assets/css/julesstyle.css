@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "NexaBold";
+    src: url("../fonts/nexabold.otf");
+}
+
+body {
+    background-image: url(../images/julesbg.png);
+    font-family: "NexaBold";
+    margin: 0;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+header form label {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+header form fieldset {
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+header form fieldset legend {
+    max-height: 0;
+    color: transparent;
+}
+
+fieldset {
+    border: transparent;
+}
+
+form input,
+form label {
+    display: block;
+}
+
+header {
+    max-height: 5rem;
+    color: green;
+    background-color: white;
+}
+
+header h1 {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+#form-zoeken label {
+    /* https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/ */
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+#form-zoeken {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#form-zoeken input,
+#form-zoeken label {
+    display: inline-block;
+}
+
+@media (min-width: 30rem) {
+    header img:first-of-type {
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 20rem) {
+    #form-zoeken {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    #form-zoeken fieldset {
+        margin: 0;
+        padding: 0;
+    }
+    #form-zoeken fieldset legend {
+        max-height: 0;
+        color: transparent;
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    #form-zoeken fieldset select:first-of-type {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    #form-zoeken input:last-of-type {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+    #form-zoeken input,
+    #form-zoeken label,
+    #form-zoeken select {
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 3rem;
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0.5rem;
+        background-color: white;
+        border-radius: 0px;
+    }
+}
+header {
+margin-bottom: 1.5em;}
+
+main form legend {
+    display: block;
+    padding: 0.2em;
+    background-color: #ff306e;
+    border-radius: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: white;
+    
+}
+
+header a:first-of-type img {
+    width: 6.4em;
+    height: 1.8em;
+    margin-top: 1.5em;
+    margin-left: 0.5em;
+    
+}
+header > img:first-of-type {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 1.7em;
+    margin-left: 0;
+    margin-left: auto;
+}
+
+header img:last-child {
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 1.7em;
+    margin-left: -5em;
+    padding-left: 1em;
+}
+
+header form input[type="text"] {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 1.8rem;
+    width: 5.2rem;
+    margin-right: 5rem;
+}
+main img:first-of-type {
+    position: fixed;
+    top: 7rem;
+    left: 1rem;
+    max-width: 3em;
+}
+
+main img {
+    max-width: 100%;
+    
+}
+
+footer {
+    font-size: 0.6em;
+}
