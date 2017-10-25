@@ -198,6 +198,7 @@ main img:first-of-type {
 
 main img {
     max-width: 100%;
+    justify-content: center;}
     
 }
 

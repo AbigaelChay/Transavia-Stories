@@ -1,5 +1,5 @@
 // Dit heb ik samen met Folkert gemaakt //
-
+"use strict";
 //Hier roepen we alle images in de main aan//
 var allImg = document.querySelectorAll("main img");
 //Hier roepen we de lightswitch image aan//
@@ -46,11 +46,10 @@ function switchAllImg(){
 
 //Hier dus zeggen we dat ie "switch" on-click//
 allImg.forEach(function(element){
-    element.addEventListener("click", function(){switchOneImg(element)});
+    element.addEventListener("click", function(){switchOneImg(element);});
 });
 
-lightSwitch.addEventListener("click", function(){switchAllImg()});
-            
+lightSwitch.addEventListener("click", function(){switchAllImg();}); 
             
             
             
