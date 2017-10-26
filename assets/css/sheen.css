@@ -3,3 +3,6 @@ main > img {
     display: block;
 }
 
+body {
+    background-image: url(../images/sheenachtergrond.jpg);
+}

@@ -32,10 +32,21 @@ main section {
     margin-right: auto;
 }
 
+h3 {
+color: #00d868;
+}
+
 main section h2 {
     width: 100%;
 }
 
+div a {
+color: white;
+padding: 0.75rem;
+background-color: #ff306e;
+border-radius: 1.5em;
+text-decoration: none;
+}
 
 /* note to self: 
 1. inline betekent dat ze naast elkaar gaan zweven (op 1 lijn) en block betekent dat ze onder elkaar gaan staan; 
@@ -90,23 +101,44 @@ article {
     border-radius: 1em;
     padding: 1em;
     margin: 1em;
-    max-height: 15em;
-    max-width: 15em;
+    /* height: 16em; */
     max-width: 15em;
 }
 article > div {
     display: block;
 }
 article > div:first-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
+
+article > div:first-of-type p {
+    margin-bottom: 1rem;
+}
+
+article > div:first-of-type a {
+    margin-top: auto;
+    text-align: center;
+}
+
 article > div:last-of-type {
     min-width: 2rem;
     max-width: 2rem;
 }
+
 article > div img {
     vertical-align: center;
-    width: 100%;
+    width: 80%;
+    padding-top: 0.5em;
 }
+
+article > div img:first-of-type {
+padding-top: 1rem;}
 
 /* article:first-of-type {
     background-image: url(../images/sheensquare.jpg);
@@ -125,6 +157,7 @@ form input,
 form label {
     display: block;
 }
+
 
 
 /* Tot hier */
@@ -229,8 +262,6 @@ header h1 {
         border-radius: 0px;
     }
 }
-header {
-margin-bottom: 1.5em;}
 
 main form legend {
     display: block;

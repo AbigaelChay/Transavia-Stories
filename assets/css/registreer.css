@@ -53,11 +53,17 @@ input[type="submit"] {
     
 }
 
-main h2:last-of-type {
+main h2 {
+color: white;
+font-size: 2em;}
+
+main section h2:last-of-type {
 font-size: 1em;
 color: black;
 margin-left: auto;
 margin-right: auto;
+    -ms-flex-item-align: center;
+    align-self: center;
 }
 
 main section {
