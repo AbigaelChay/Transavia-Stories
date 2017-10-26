@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(/site/Transavia-Stories/assets/images/beachie.jpg);
+    background-image: url("../images/beachie.jpg");
     font-family: "NexaBold";
     margin: 0;
 }
