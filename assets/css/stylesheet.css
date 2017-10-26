@@ -83,7 +83,9 @@ header form fieldset legend {
 }
 
 article {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     background: white;
     border-radius: 1em;
     padding: 1em;
@@ -92,13 +94,18 @@ article {
     max-width: 15em;
     max-width: 15em;
 }
-article div {
-    max-height: 10em;
-    overflow: hidden;
-    
+article > div {
+    display: block;
 }
-article div img {
+article > div:first-of-type {
+}
+article > div:last-of-type {
+    min-width: 2rem;
+    max-width: 2rem;
+}
+article > div img {
     vertical-align: center;
+    width: 100%;
 }
 
 /* article:first-of-type {
@@ -285,3 +292,4 @@ align-content: center;
 -webkit-box-pack: center;
 -ms-flex-pack: center;
 justify-content: center;}
+
