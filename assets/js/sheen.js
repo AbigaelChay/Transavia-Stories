@@ -1,6 +1,6 @@
 // Dit heb ik samen met Folkert gemaakt //
 
-var counter = 0;
+var counter = 90;
 function rotate(afbeelding) {
     "use strict";
     if (counter === 360) {

@@ -1,0 +1,90 @@
+main fieldset {
+    display: block;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    min-width: 15em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+main form legend {
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main p, main a {
+
+    display: block;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+
+}
+
+main h2 {
+padding: 1em;
+    margin: 1em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+input[type="submit"] {
+    font-family: "NexaBold";
+    src: url("../fonts/nexabold.otf");
+    font-size: 1rem;
+    display: block;
+    background: #2b00a3;
+    border-radius: 1em;
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+main h2:last-of-type {
+font-size: 1em;
+color: black;
+margin-left: auto;
+margin-right: auto;
+}
+
+main section {
+    display: block;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+    width: 40%;
+    min-width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main a {
+    display: block;
+    color: white;
+    background: #2b00a3;
+    border-radius: 1em;
+    padding: 1em;
+    min-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main div {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
