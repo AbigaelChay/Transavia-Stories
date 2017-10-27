@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "NexaBold";
+    src: url("../fonts/nexabold.otf");
+}
+
 main fieldset {
     display: block;
     background: white;
@@ -30,10 +35,10 @@ main p, main a {
 }
 
 main h2 {
+display: block;
+margin: auto;
 padding: 1em;
-margin-right: 2em;
 width: 40%;
-margin-right: auto;
 
 }
 main section > h2 {
@@ -102,4 +107,14 @@ main input[type="text"]:valid, main input[type="email"]:valid, main input[type="
     background-color: lawngreen;
 }
 
+main input[type="submit"] {
+font-size: 0.75em;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+}
 

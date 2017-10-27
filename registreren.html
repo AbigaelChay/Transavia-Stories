@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="assets/css/registreer.css">
-    
+
 </head>
 
 <body>
-     <header>
+    <header>
         <a href="index.html"><img src="assets/images/logo1.png" alt="logo" /></a>
         <h1> 99STORIES </h1>
         <img src="assets/images/searchicon.png" alt="zoekicoon">
@@ -26,9 +26,22 @@
             <img src="assets/images/accounticon.png" alt="account">
         </a>
     </header>
-    
+
     <main>
-       <h2>Maak een account</h2>
+        <form action="index.html">
+            <fieldset>
+                <legend>Al een account? Inloggen!</legend>
+                <label for="email">email</label>
+                <input id="email" type="email" required>
+                <label for="password">wachtwoord</label>
+                <input id="password" type="password" required>
+                <input type="submit" value="Inloggen">
+                <input type="submit" value="Inloggen met Facebook">
+                <input type="submit" value="Inloggen met Twitter">
+            </fieldset>
+        </form>
+
+        <h2>Maak een account</h2>
         <form action="index.html">
             <fieldset>
                 <legend>Persoonsgegevens</legend>
@@ -61,13 +74,13 @@
 
             <input type="submit" value="Account aanmaken">
         </form>
-        
+
         <section>
-        <h2>Of registreer met je social media account</h2>
-        <div><a href="index.html">Facebook</a>
-        <a href="index.html">Twitter</a></div>
-       </section>
-       
+            <h2>Of registreer met je social media account</h2>
+            <div><a href="index.html">Facebook</a>
+                <a href="index.html">Twitter</a></div>
+        </section>
+
     </main>
 </body>
 
