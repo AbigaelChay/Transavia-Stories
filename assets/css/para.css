@@ -1,0 +1,15 @@
+main img {
+    width: 100%;
+}
+
+main img:first-of-type {
+    display: none;
+}
+@media (min-width: 30rem){
+    main img:first-of-type {
+        display:block;
+    }
+    main img:last-of-type {
+        display:none;
+    }
+}

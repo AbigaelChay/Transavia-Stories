@@ -96,3 +96,13 @@ display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 }
+
+main input[type="text"]:valid, main input[type="email"]:valid, main input[type="password"]:valid {
+    border-color: green;
+    background-color: lawngreen;
+}
+
+main input[type="email"]:invalid {
+border-color: darkred;
+background-color: red;}
+
