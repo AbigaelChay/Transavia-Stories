@@ -102,7 +102,4 @@ main input[type="text"]:valid, main input[type="email"]:valid, main input[type="
     background-color: lawngreen;
 }
 
-main input[type="email"]:invalid {
-border-color: darkred;
-background-color: red;}
 

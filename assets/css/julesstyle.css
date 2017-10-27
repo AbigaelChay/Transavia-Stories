@@ -189,19 +189,50 @@ header form input[type="text"] {
     width: 5.2rem;
     margin-right: 5rem;
 }
+/* main {
+    overflow-x: hidden;
+}
 main img:first-of-type {
     position: fixed;
     top: 7rem;
     left: 1rem;
     max-width: 3em;
 }
-
+main img:first-of-type {
+    z-index: 4;
+}
 main img {
-    max-width: 100%;
+    width: 170%;
+    transform: translateX(-17.5%);
     justify-content: center;}
     
 }
+*/
 
 footer {
     font-size: 0.6em;
+}
+
+/* @media (min-width: 40rem){
+    main img {
+        min-width: initial;
+        width:100%;
+        transform: translateX(0);
+    } 
+    
+}*/
+main img {
+    display: none;
+}
+main img:last-of-type {
+        display:block;
+}
+
+@media (min-width: 40rem){
+    main img {
+        display:block;
+    }
+    main img:last-of-type {
+        display:none;
+    }
 }
