@@ -1,10 +1,16 @@
 @font-face {
     font-family: "NexaBold";
     src: url("../fonts/nexabold.otf");
+
+}
+
+@font-face {
+    font-family: "NexaLight";
+    src:url("../fonts/nexalight.ttf")
 }
 
 body {
-    background-image: url("../images/beachie.jpg");
+    background-image: url("../images/bookbeach.jpg");
     font-family: "NexaBold";
     margin: 0;
 }
@@ -137,6 +143,10 @@ article > div img {
     padding-top: 0.5em;
 }
 
+article p {
+font-family: "nexalight"
+}
+
 article > div img:first-of-type {
 padding-top: 1rem;}
 
@@ -157,8 +167,6 @@ form input,
 form label {
     display: block;
 }
-
-
 
 /* Tot hier */
 
@@ -242,10 +250,10 @@ header h1 {
         margin: 0;
     }
     #form-zoeken fieldset select:first-of-type {
-        border-radius: 0.5rem 0 0 0.5rem;
+        border-radius: 1.5rem 0 0 1.5rem;
     }
     #form-zoeken input:last-of-type {
-        border-radius: 0 0.5rem 0.5rem 0;
+        border-radius: 0 1.5rem 1.5rem 0;
     }
     #form-zoeken input,
     #form-zoeken label,
@@ -326,6 +334,6 @@ justify-content: center;}
 
 h4 {
 margin-right: 1em;
-font-size: 0.6em;
+font-size: 0.7em;
 color: #2b00a3; 
 }
