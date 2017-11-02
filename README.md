@@ -4,6 +4,7 @@
 Dit is de eerste keer dat ik een ReadMe schrijf, ook heb ik geen officiele readme's gelezen
 (wel van film torrents maar die hebben niet echt overeenkomsten...) dus ik hoop dat dit de bedoeling is:
 
+## code
 Deze code is voor een schoolproject waarbij de Transavia website zo goed mogelijk wordt nagebootst, maar dan
 verhalen aanbied in plaats van reizen. De verhalen zijn geschreven door "Molovich", meer hier te vinden: http://nurksmagazine.nl/author/molovich/
 Drie van zijn verhalen heb ik vormgegeven aan de hand van een sfeerwoord dat ik zelf passen vond.
